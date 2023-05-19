@@ -248,7 +248,7 @@ class InsertDialog(QDialog):
 
     def add_student(self):
         name = self.student_name.text()
-        course = self.course_name.itemText(self.course_name.currentText())
+        course = self.course_name.itemText(self.course_name.currentIndex())
         mobile = self.mobile.text()
         connection = DatabaseConnection().connect()
         cursor = connection.cursor()
